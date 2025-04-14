@@ -1,0 +1,13 @@
+{
+  "name": "ai-copy",
+  "version": "1.0.0",
+  "description": "CLI tool to copy system prompt and all source files of a project to attach it into an AI prompt.",
+  "bin": {
+    "ai-copy-init": "src/ai-copy-init.js",
+    "ai-copy": "src/ai-copy.js"
+  },
+  "dependencies": {
+    "glob": "^11.0.1"
+  },
+  "license": "MIT"
+}

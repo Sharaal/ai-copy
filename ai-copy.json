@@ -1,0 +1,19 @@
+[
+  {
+    "includes": ["systemPrompt.md"],
+    "template": ["{fileContent}"]
+  },
+  {
+    "includes": [
+      "README.md",
+      "src/**/*.js",
+      "packages.json"
+    ],
+    "template": [
+      "----------------------------------------",
+      "File: {filePath}",
+      "----------------------------------------",
+      "{fileContent}"
+    ]
+  }
+]

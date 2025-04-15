@@ -1,6 +1,6 @@
 {
   "name": "ai-copy",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "CLI tool to copy a system prompt and source files of a project to attach them to an AI prompt configurable with globs of included/excluded files and templating.",
   "bin": {
     "ai-copy-init": "src/ai-copy-init.js",

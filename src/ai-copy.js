@@ -18,10 +18,12 @@ Configs.parse(configs);
   for (const config of configs) {
     const filePaths = await glob(config.includes, { ignore: config.excludes });
     for (const filePath of filePaths) {
-      console.log(config.template
-        .join('\n')
-        .replace(/{filePath}/g, filePath)
-        .replace(/{fileContent}/g, fs.readFileSync(filePath, 'utf-8')));
+      if (fs.lstatSync(filePath).isFile()) {
+        console.log(config.template
+          .join('\n')
+          .replace(/{filePath}/g, filePath)
+          .replace(/{fileContent}/g, fs.readFileSync(filePath, 'utf-8')));
+      }
     }
   }
 })();

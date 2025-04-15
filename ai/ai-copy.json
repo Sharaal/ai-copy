@@ -1,13 +1,14 @@
 [
   {
-    "includes": ["systemPrompt.md"],
+    "includes": ["ai/systemPrompt.md"],
     "template": ["{fileContent}"]
   },
   {
     "includes": [
-      "README.md",
       "src/**/*.js",
-      "packages.json"
+      ".gitignore",
+      "package.json",
+      "README.md"
     ],
     "template": [
       "----------------------------------------",
